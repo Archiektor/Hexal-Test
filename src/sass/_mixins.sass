@@ -1,0 +1,26 @@
+@mixin btn_hover
+  &:hover
+    background-image: none
+    background-color: #6f6bff
+    transition: 1.5s all
+
+@mixin line_before
+  content: ''
+  position: absolute
+  bottom: 50px
+  left: 325px
+  width: 2px
+  transition: 0.3s all
+
+@mixin line_after
+  content: ''
+  position: absolute
+  bottom: 50px
+  left: 325px
+  width: 2px
+  transition: 0.3s all
+
+@mixin small_icon
+  display: inline-block
+  margin-right: 14px
+  color: $blueColor

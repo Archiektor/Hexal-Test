@@ -1,0 +1,306 @@
+//Header style
+
+header
+  position: relative
+
+  nav
+    height: 63px
+    position: fixed
+    width: 100%
+    background-color: #323232
+    z-index: 1
+
+    .navhex
+      position: absolute
+      left: 50%
+      top: -115px
+      transform: translateX(-60%)
+      width: 180px
+      height: 206px
+      display: inline-block
+      background: url('../img/grayhex.png') center (center /cover) no-repeat
+      z-index: -1
+
+    .menu
+      display: flex
+      flex-flow: row nowrap
+      list-style-type: none
+      justify-content: center
+      padding-top: 10px
+      padding-bottom: 23px
+      margin: 0
+      padding-left: 0
+
+      li
+        padding-right: 32px
+
+        a
+          color: $whiteColor
+          font-size: 10px
+          font-weight: 700
+          text-transform: uppercase
+
+        //li a:first-child
+        //  color: $blueColor
+        #booterr
+          color: $blueColor
+
+        &:nth-child(3)
+          background: url('../icons/logo.svg') center (center /cover) no-repeat
+          width: 64px
+          height: 55px
+          padding: 0
+          margin-right: 32px
+
+        &:not(.logo)
+          margin-top: 13px
+
+//Portfolio style
+
+.portfolio
+  padding: 153px 0 89px 0
+  text-align: center
+  position: relative
+
+  .row
+    display: flex
+    justify-content: space-around
+    align-items: flex-start
+
+    .col-md-10:before
+      content: ''
+      position: absolute
+      bottom: 50px
+      left: 325px
+      width: 2px
+      height: 104px
+      background-color: #95aceb
+      transition: 0.3s all
+
+    .col-md-10:after
+      content: ''
+      position: absolute
+      bottom: 50px
+      right: 325px
+      width: 2px
+      height: 104px
+      background-color: #95aceb
+      transition: 0.3s all
+
+    //! NICE Effect
+    //img:first-child
+    //  border-left: 1px solid #e4e9eb
+    //  line-height: 104px
+    //  padding-left: 20px
+
+    .col-md-12
+      margin: -32px 0
+
+    img
+      margin: 0 10px
+
+  .rect
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    position: absolute
+    height: 6px
+    bottom: 23px
+    left: 30px
+
+    div
+      display: inline-block
+      width: 6px
+      height: 6px
+      background-color: #ddd2c5
+      margin-left: 5px
+
+      &:nth-child(3)
+        background-color: #8b8784
+
+//.About style
+
+.about
+  background-color: $blueColor
+  position: relative
+
+  .cv
+    height: 341px
+    padding: 68px 0
+
+    img
+      float: left
+      margin: 0 19px 19px 19px
+
+    h2
+      color: #d7fcf5
+      font-size: 30px
+      font-weight: 400
+      box-sizing: border-box
+
+    h3
+      margin-top: 9px
+      color: #20816d
+      font-size: 18px
+      font-weight: 400
+
+    p
+      margin-top: 19px
+      color: #d7fcf5
+      font-size: 12px
+      font-weight: 400
+      line-height: 21.56px
+
+    &:before
+      content: ''
+      position: absolute
+      bottom: 20px
+      left: 310px
+      width: 2px
+      transition: 0.3s all
+      height: 301px
+      background-color: $greenColor
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 20px
+      right: 310px
+      width: 2px
+      transition: 0.3s all
+      height: 301px
+      background-color: $greenColor
+
+    .icons
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-end
+      margin-top: 26px
+      margin-right: 13px
+      height: 24px
+      padding: 0
+
+      &_item
+        display: inline-block
+        width: 25px
+
+        &_1
+          background: url('../icons/smallIcons/Facebook.svg') center center/ cover no-repeat
+
+        &_2
+          background: url('../icons/smallIcons/Twitter.svg') center (center /cover) no-repeat
+
+        &_3
+          background: url('../icons/smallIcons/Google.svg') center (center /cover) no-repeat
+
+        &_4
+          background: url('../icons/smallIcons/Pinterest.svg') center (center /cover) no-repeat
+
+        &_5
+          background: url('../icons/smallIcons/Linkedin.svg') center (center /cover) no-repeat
+
+        &_6
+          background: url('../icons/smallIcons/Dribbble.svg') center (center /cover) no-repeat
+
+//fOOTER style
+
+footer
+  background-color: #323232
+  padding: 14px 0
+
+  hr
+    width: 90%
+    height: 2px
+    background-color: #2b2b2b
+    border-style: none
+    outline: none
+
+  .col-md-8
+    padding: 67px 0 65px 45px
+
+    h1
+      color: #e0e0e0
+      font-size: 30px
+      font-weight: 400
+      margin-bottom: 0
+
+    h2
+      color: #bebebe
+      font-size: 18px
+      font-weight: 400
+      margin-top: -8px
+
+    div
+      position: relative
+      margin-top: 16px
+
+
+      input, textarea
+        width: 100%
+        padding: 13px 15px
+        background-color: #454545
+        color: #dddddd
+        font-size: 12px
+        font-weight: 400
+        margin-left: -3px
+        border-style: none
+
+        &[type="submit"]
+          width: 90px
+          height: 38px
+          background-color: $blueColor
+          padding: 12px 30px
+          float: right
+          text-transform: uppercase
+          margin-top: -6px
+          margin-right: 2px
+          @include btn_hover
+
+    .small_input
+      display: flex
+      align-items: center
+      height: 38px
+
+    textarea
+      margin-top: -25px
+
+
+  .col-md-4
+    padding: 136px 100px 0 20px
+
+    p
+      color: #dddddd
+      font-size: 12px
+      font-weight: 400
+      line-height: 21.56px
+
+      span
+        color: #e0e0e0
+        font-weight: 900
+
+    .location
+      margin-left: 3px
+      background: url('../icons/smallIcons/location.png') center center/ auto no-repeat
+      @include small_icon
+      width: 7px
+      height: 11px
+
+    .phone
+      margin-left: 1px
+      background: url('../icons/smallIcons/phone.png') center center/ cover no-repeat
+      @include small_icon
+      width: 11px
+      height: 11px
+
+    .email
+      background: url('../icons/smallIcons/mail.png') center center/ cover no-repeat
+      @include small_icon
+      width: 13px
+      height: 8px
+
+.subfooter
+  .copyright
+    padding: 11px 39px
+    height: 44px
+    background-color: #222222
+    color: #676767
