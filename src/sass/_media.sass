@@ -24,7 +24,7 @@
 @media (max-width: 991px)
   .portfolio
     .row
-      border: 2px solid crimson
+      //border: 2px solid crimson
 
       .col-md-10:before
         width: 0
@@ -48,7 +48,7 @@
 @media (max-width: 767px)
   .portfolio
     .row
-      border: 2px solid purple
+      //border: 2px solid purple
 
   .about
     .cv
@@ -67,3 +67,126 @@
       p
         font-size: 11px
         line-height: 16px
+
+  footer
+    .container
+      .col-md-8
+        padding: 0
+
+      .col-md-4
+        padding: 0
+        padding-top: 30px
+        width: 40%
+        float: left
+
+@media (max-width: 575px)
+  .portfolio
+    .row
+      //border: 2px solid darkolivegreen
+
+      .col-md-10
+        img
+          margin: 10px 15px
+
+      .col-md-12
+        margin-top: 10px
+        margin-bottom: -10px
+
+        .hex
+          margin-top: -30px
+
+        img
+          margin: 10px 15px
+
+  footer
+    .container
+      .col-md-8
+        margin: 0 auto
+        text-align: center
+        width: 80%
+
+        h1
+          font-size: 22px
+
+        h2
+          font-size: 14px
+
+      .col-md-4
+        margin: 0 auto
+
+  .subfooter
+    .copyright
+      font-size: 12px
+      height: 30px
+
+@media (max-width: 474px)
+  header
+    nav
+      height: 50px
+
+    .container-fluid
+      .menu
+        padding-left: 15px
+        height: 30px
+
+        li
+          padding-right: 20px
+
+          a
+            font-size: 9px
+
+          &:nth-child(3)
+            margin-right: 10px
+
+          &:not(.logo)
+            margin-top: 3px
+
+  .portfolio
+    .row
+      &:first-child
+        margin-top: -35px
+
+      .col-md-10
+        margin: 0
+        margin-bottom: 15px
+
+        img
+          margin-bottom: 10px
+
+
+      .col-md-12
+        margin: 0
+        margin-bottom: 15px
+
+        .hex
+          margin-top: 10px
+
+        img
+          margin-bottom: 10px
+
+  .about
+    .cv
+      text-align: right
+
+      img
+        width: 30%
+
+      h2
+        font-size: 20px
+
+      h3
+        margin-top: 8px
+
+      p
+        margin-top: 8px
+
+  footer
+    .container
+
+      .col-md-8
+        h2
+          margin-top: 10px
+
+      .col-md-4
+        width: 80%
+        margin-left: 2.5rem

@@ -49,7 +49,7 @@
                 <img src="img/secondRow/2first.png" alt="secondPIC">
                 <img src="img/secondRow/2first.png" alt="thirdPIC">
                 <img src="img/secondRow/2first.png" alt="fourthPIC">
-                <img src="img/secondRow/2first.png" alt="fifthPIC">
+                <img class="hex" src="img/secondRow/2first.png" alt="fifthPIC">
             </div>
             <div class="col-md-10 col-lg-12">
                 <img src="img/thirdRow/first.png" alt="firstPIC">
@@ -104,23 +104,25 @@
             <div class="col-md-8">
                 <h1>Get In Touch</h1>
                 <h2>In order to get in touch use the contact form below:</h2>
-                <div class="small_input">
-                    <label for="name"></label>
-                    <input type="text" name="name" id="name" placeholder="Name (Required)" required>
-                </div>
-                <div class="small_input">
-                    <label for="email"></label>
-                    <input type="text" name="email" id="email" placeholder="Email (Required)" required>
-                </div>
-                <div class="small_input">
-                    <label for="subject"></label>
-                    <input type="text" name="subject" id="subject" placeholder="Subject">
-                </div>
-                <div>
-                    <label for="comments"></label>
-                    <textarea name="comments" cols="35" rows="4" id="comments"
-                              placeholder="Write your message here..."></textarea>
-                </div>
+                <form id="small_form">
+                    <div class="small_input">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Name (Required)" required>
+                    </div>
+                    <div class="small_input">
+                        <label for="email"></label>
+                        <input type="text" name="email" id="email" placeholder="Email (Required)" required>
+                    </div>
+                    <div class="small_input">
+                        <label for="subject"></label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                    <div>
+                        <label for="comments"></label>
+                        <textarea name="comments" cols="35" rows="4" id="comments"
+                                  placeholder="Write your message here..."></textarea>
+                    </div>
+                </form>
                 <div>
                     <input name="btn" type="submit" value="send" onclick="validate()">
                 </div>
